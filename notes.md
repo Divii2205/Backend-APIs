@@ -1,4 +1,4 @@
-## Client Server Architechture:
+# Client Server Architechture:
 
 **Client**: Requests for some services
 **Server**: Provides the services; does only computation, and not store; storing is done by the database
@@ -9,7 +9,7 @@
 Parts of url:
 protocol -> domain name -> resource -> query
 
-## Protocols: 
+# Protocols: 
 A set of rules and methodolagies followed during the service transfer, when API request is sent. To govern the service/data (govern the communication)
 
 **Types:**
@@ -33,7 +33,7 @@ A set of rules and methodolagies followed during the service transfer, when API 
 
 **Netowork calls are the most expensive calls: repeated connection requests, time consuming**
 
-# Network Protocol:
+## Network Protocol:
 
 1. Data packing
 2. Error handling
@@ -48,7 +48,7 @@ Transmitting data continuously over the internet, instead of downloading the ent
 To and Fro of data packets => streaming
 Client sends a request to the server, server sends request to the *storage*, server receives it and through TCP it reaches the client
 
-# Types of streamings:
+### Types of streamings:
 
 1. Progressive: Allows playback after buffering
 2. Adaptive: provides option for quality
