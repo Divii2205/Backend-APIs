@@ -1,4 +1,4 @@
-## Client Server Architecture:
+# Client Server Architecture:
 
 **Client**: Requests for some services
 **Server**: Provides the services; does only computation, and not store; storing is done by the database
@@ -67,6 +67,13 @@ Example: Push notification, when there is a change in the storage, a server send
 3. Data formats: Raw data/compiled data/processed data => plan txt, video, audio, image
 4. Versioning: Keep the older versions of the API still active and compatible instead of depricating the entire API Key
 
+### Why API? 
+
+1. Scalability: multiple end points can be generated for the same API
+2. Modularity: Even if one link/task fails, the remaining continue
+3. Flexibility & Reusibility
+4. Third-party Integration
+
 ## HTTP Methods:
 1. GET
 2. POST
@@ -76,17 +83,17 @@ Example: Push notification, when there is a change in the storage, a server send
 
 **OPEN API => NO authorisation is required**
 
-### Why API? 
-
-1. Scalability: multiple end points can be generated for the same API
-2. Modularity: Even if one link/task fails, the remaining continue
-3. Flexibility & Reusibility
-4. Third-party Integration
-
-# Monolithic Architecture:
+## Monolithic Architecture:
 Software design model where all components of an application are built into a single unit. Any flaw in the service disrupts the entire architecture and destroys the entire server. Easy deployment, less cost and fast services.
 
-# Microservices Architecture:
+## Microservices Architecture:
 Multiple components where one server handles only one service. Servicing never distrupts completely. Challenge in deployment, higher costs and slow services. 
 
-<!-- ## Stateless and Session Management: -->
+## Session Management:
+Process of handling a user's interactions with a web application or service
+
+### Stateless:
+Server does not store any information about a user's session between requests, treating each interaction as completely new
+
+### Stateful
+Server maintains user session data across multiple requests, remembering details like login status or shopping cart items throughout a user's interaction
